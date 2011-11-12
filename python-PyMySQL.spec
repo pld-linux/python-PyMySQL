@@ -1,11 +1,11 @@
 Summary:	Pure Python MySQL Client
 Name:		python-PyMySQL
-Version:	0.4
+Version:	0.5
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://github.com/downloads/petehunt/PyMySQL/PyMySQL-%{version}.tar.gz
-# Source0-md5:	4bc27e750f5d16e1e6169ad43b2c3568
+# Source0-md5:	125e8a3449e05afcb04874a19673426b
 URL:		http://www.pymysql.org/
 BuildRequires:	python-modules
 BuildRequires:	python-setuptools
@@ -32,13 +32,12 @@ python -- setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
-rm -f $RPM_BUILD_ROOT%{py_sitedir}/{PyMySQL/{constants/,},}*.py
+%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGELOG
 %{py_sitescriptdir}/PyMySQL-*.egg-info
 %{py_sitescriptdir}/pymysql
