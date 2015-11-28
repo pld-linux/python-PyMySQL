@@ -1,7 +1,7 @@
 Summary:	Pure Python MySQL Client
 Name:		python-PyMySQL
 Version:	0.5
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://github.com/downloads/petehunt/PyMySQL/PyMySQL-%{version}.tar.gz
