@@ -24,7 +24,7 @@ work on CPython 2.3+, Jython, IronPython, PyPy and Python 3.
 %setup  -q -n PyMySQL-%{version}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
