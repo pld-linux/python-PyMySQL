@@ -1,7 +1,7 @@
 Summary:	Pure Python MySQL Client
 Name:		python-PyMySQL
 Version:	0.5
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://github.com/downloads/petehunt/PyMySQL/PyMySQL-%{version}.tar.gz
@@ -29,10 +29,8 @@ work on CPython 2.3+, Jython, IronPython, PyPy and Python 3.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python -- setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
 
+%py_install
 %py_postclean
 
 %clean
