@@ -8,7 +8,7 @@
 Summary:	Pure Python MySQL Client
 Name:		python-%{module}
 Version:	0.7.4
-Release:	7
+Release:	8
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://github.com/PyMySQL/PyMySQL/archive/%{version}/%{module}-%{version}.tar.gz
